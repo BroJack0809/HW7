@@ -1,1 +1,1 @@
-wed:unicorn hello_django.wsgi
+wed:gunicorn hello_django.wsgi
