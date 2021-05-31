@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7c7samk$t8lsbsn_0+av2m(^a7j7dy%39&qm49g@(#w*trv4b&'
+SECRET_KEY = 'django-insecure-9%fmk!*^c4uht7_wwli%8kqsre&31!bm+@5d=w5m-f0ll0qz0n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://hw7b0829006.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['https://hw7b0829006.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -128,22 +128,21 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-LOGGING={
-    'version':1,
-    'disable_existing_loggers':False,
-    'handlers':{
-        'file':{
-            'level':'DEBUG',
-            'class':'logging.FileHandler',
-            'filename':'./debug.log',
-        },
-    },
-    'loggers':{
-        'django':{
-            'handlers':['file'],
-            'level':'DEBUG',
-            'propagate':True,
-        },
-    },
+LOGGING = {
+ 'version': 1,
+ 'disable_existing_loggers': False,
+ 'handlers': {
+ 'file': {
+ 'level': 'DEBUG',
+ 'class': 'logging.FileHandler',
+ 'filename': './debug.log',
+ },
+ },
+ 'loggers': {
+ 'django': {
+ 'handlers': ['file'],
+ 'level': 'DEBUG',
+ 'propagate': True,
+ },
+ },
 }
